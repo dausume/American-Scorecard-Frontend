@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'term-definition-display',
-  templateUrl: 'term-definition-display.html',
-  styleUrls: ['term-definition-display.css']
+  selector: 'term-instance-main',
+  templateUrl: 'term-instance-main.html',
+  styleUrls: ['term-instance-main.css']
 })
-export class TermDefinitionDisplayComponent {
+export class TermInstanceMainComponent {
   @Input()
   currentTermData = {};
   

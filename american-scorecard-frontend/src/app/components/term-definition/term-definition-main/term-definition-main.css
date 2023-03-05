@@ -1,0 +1,25 @@
+.top-segment {
+    display: "flex";
+    flex-direction : row;
+    flex-wrap : nowrap;
+    justify-content: flex-end;
+}
+
+.modifier-buttons-container {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap : nowrap;
+    flex-basis: 300px;
+    width: 100px;
+    justify-content: center;
+    z-index: 10;
+}
+
+.modifier-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap : nowrap;
+    flex-basis: 50px;
+    justify-content: center;
+}

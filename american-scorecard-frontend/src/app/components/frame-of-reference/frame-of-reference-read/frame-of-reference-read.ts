@@ -4,11 +4,11 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'political-category-display',
-  templateUrl: 'political-category-display.html',
-  styleUrls: ['political-category-display.css']
+  selector: 'frame-of-reference-read',
+  templateUrl: 'frame-of-reference-read.html',
+  styleUrls: ['frame-of-reference-read.css']
 })
-export class PoliticalCategoryDisplayComponent {
+export class FrameOfReferenceReadComponent {
   @Input()
   currentCategoryData = {};
   

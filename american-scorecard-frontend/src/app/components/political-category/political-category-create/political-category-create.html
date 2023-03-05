@@ -1,1 +1,14 @@
-<div>Political Category Create Component Placeholder</div>
+<mat-card [formGroup]="politicalCategoryForm" class="form-column">
+        <h2>New Political Category</h2>
+    
+        <label for="name">Name: </label>
+        <input matInput id="name" type="text" placeholder="Name" formControlName="name" value="">
+
+        <label for="description">Description: </label>
+        <textarea matInput id="description" type="text" placeholder="Enter description here..." formControlName="description" value="">
+        </textarea>
+        <label for="parentCategories">Parent Categories: </label>
+        <button mat-button>+ Parent Category</button>
+
+        <button mat-button (click)="onSubmit()">Submit</button>
+</mat-card>

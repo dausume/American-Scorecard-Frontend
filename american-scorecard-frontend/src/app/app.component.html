@@ -1,3 +1,83 @@
-<header></header>
-<div>App component Placeholder</div>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+    
+    <header [currentComponentTitle]="currentComponentTitle" ></header>
+    <mat-sidenav [(opened)]="sideNavOpened" #sidenav mode="side" >
+        <mat-nav-list>
+          <mat-list-item>
+             <button mat-icon-button routerLink="/">
+                <mat-icon>home</mat-icon>
+                Home
+             </button>
+          </mat-list-item>
+          <mat-list-item>
+            <button mat-icon-button routerLink="/how-to-use">
+               <mat-icon>help</mat-icon>
+               How-to-use
+            </button>
+         </mat-list-item>
+         <mat-list-item>
+            <button mat-icon-button routerLink="/config-tables">
+               <mat-icon></mat-icon>
+               Custom Tables
+            </button>
+         </mat-list-item>
+          <mat-list-item>
+             <button mat-icon-button routerLink="/term-definition">
+                <mat-icon></mat-icon>
+                Term Definitions
+             </button>
+          </mat-list-item>
+          <mat-list-item>
+             <button mat-icon-button routerLink="/term-instance">
+                <mat-icon></mat-icon>
+                Term Instance
+             </button>
+          </mat-list-item>
+          <mat-list-item>
+             <button mat-icon-button routerLink="/scoring-definition">
+                <mat-icon></mat-icon>
+                Scoring Definitions
+             </button>
+          </mat-list-item>
+          <mat-list-item>
+             <button mat-icon-button routerLink="/scoring-instance">
+                <mat-icon></mat-icon>
+                Scoring Instances
+             </button>
+          </mat-list-item>
+          <mat-list-item>
+            <button mat-icon-button routerLink="/political-category">
+               <mat-icon></mat-icon>
+               Political Categories
+            </button>
+         </mat-list-item>
+         <mat-list-item>
+            <button mat-icon-button routerLink="/frame-of-reference">
+               <mat-icon></mat-icon>
+               Reference Frames
+            </button>
+         </mat-list-item>
+         <mat-list-item>
+            <button mat-icon-button routerLink="/profession-category">
+               <mat-icon></mat-icon>
+               Professional & Specialization Categories
+            </button>
+         </mat-list-item>
+        <mat-list-item>
+         <button mat-icon-button routerLink="/about-the-scorecard">
+            <mat-icon></mat-icon>
+            About the Scorecard
+         </button>
+      </mat-list-item>
+     <mat-list-item>
+      <button mat-icon-button routerLink="/coming-next">
+         <mat-icon></mat-icon>
+         What comes next?
+      </button>
+   </mat-list-item>
+  </mat-nav-list>
+  </mat-sidenav>
+    <p><button mat-button (click)="toggleSideNav()" ><mat-icon>menu</mat-icon></button></p>
+    
+    <router-outlet></router-outlet>
+</mat-sidenav-container>

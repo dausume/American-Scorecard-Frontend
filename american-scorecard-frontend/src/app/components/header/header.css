@@ -1,8 +1,29 @@
 
 .header-icon-button {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 50px 25px 15px;
 }
 
 .header-page-button {
-    padding: 15px 0 0 15px;
+    padding: 15px 50px 0 15px;
 }
+
+mat-sidenav-container {
+    height: 100%
+  }
+  
+  mat-sidenav-content {
+    padding: 16px
+  }
+  
+  mat-sidenav {
+    background-color: rgb(198, 139, 194);
+    min-width: 350px;
+    width: auto;
+    max-width: 20%;
+    height:vmax;
+    padding: 16px;
+  }
+
+  form {
+      background-color: white;
+  }

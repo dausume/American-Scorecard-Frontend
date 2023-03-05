@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: 'term-definition-create.html',
   styleUrls: ['term-definition-create.css']
 })
-export class TermDefinitionDisplayComponent {
+export class TermDefinitionCreateComponent {
   @Input()
   currentTermData = {};
   
