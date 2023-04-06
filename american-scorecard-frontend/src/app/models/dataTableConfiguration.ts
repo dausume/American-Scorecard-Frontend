@@ -2,13 +2,13 @@ import { ValidObjects } from './validObjects';
 import { dataTableColumn } from './dataTableColumn';
 
 export class dataTableConfiguration {
-    id?: string;
+    id?: number;
     tableName?: string;
     objectsUsed? : string[];
     filters?: string[];
     columns?: dataTableColumn[];
 
-    constructor(id: string, tableName:string, objectsUsed: string[], filters: string[], columns: dataTableColumn[]){
+    constructor(id: number, tableName:string, objectsUsed: string[], filters: string[], columns: dataTableColumn[]){
         this.id = id;
         this.tableName = tableName;
         this.objectsUsed = objectsUsed;

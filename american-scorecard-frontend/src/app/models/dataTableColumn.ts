@@ -1,23 +1,18 @@
 export class dataTableColumn {
-    id?: string
+    id?: number
     //Id linking this column to a specific table configuration
-    tableConfigId?:string
+    tableConfigId?:number
     //The displayed name for the column, customizable and distinct from the actual variable name.
-    columnName?:string
-    //The following two are used when the column specifically accesses values using references and chained references.
-    isByReference?:boolean
-    columnReferenceChain?:dataTableColumn
+    columnName:string
     //The actual object name, variable, and type to be displayed.
-    objectName?:string
-    variableName?:string
-    variableType?:string
+    objectName:string
+    variableName:string
+    variableType:string
     
-    constructor(id?: string, tableConfigId?:string, columnName?:string, isByReference?:boolean, columnReferenceChain?:dataTableColumn, objectName?:string, variableName?:string, variableType?:string){
+    constructor(columnName:string, variableName:string, variableType:string, objectName:string, id?: number, tableConfigId?:number){
         this.id = id;
         this.tableConfigId = tableConfigId;
         this.columnName = columnName;
-        this.isByReference = isByReference;
-        this.columnReferenceChain = columnReferenceChain;
         this.objectName = objectName;
         this.variableName = variableName;
         this.variableType = variableType;

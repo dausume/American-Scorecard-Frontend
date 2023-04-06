@@ -9,8 +9,7 @@
                 <th mat-header-cell *matHeaderCellDef mat-sort-header> {{column}} </th>
                 <!-- *matCellDef="let instance" {{instance[column]}}-->
                 <td mat-cell *matCellDef="let instance"> 
-                    <a> test -  </a>
-                    <!-- {{instance[headerToVarMap]}} -->
+                    {{instance[column]}}
                 </td>
             </ng-container>
             
